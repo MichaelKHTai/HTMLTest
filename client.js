@@ -1,6 +1,6 @@
-import require;
-var moduleName = 'module';
-module1 = require([moduleName], function(fooModule){
-    // do something with fooModule
-})
-console.log(module1());  // prints: "this is module1! and this is module2!"
+define(function (require) {
+    var module1 = require("./module");
+    console.log(module1())
+
+    // Rest of the module.
+});
