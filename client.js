@@ -1,3 +1,4 @@
 
-var module1 = require("./module.js");
-console.log(module1())
+require(['module'], function (module1) {
+    console.log(module1())
+});
